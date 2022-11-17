@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        /* text-align: center; */
+        color: aquamarine;
+      }
+      div h2 {
+        background-color: blueviolet;
+      }
+        /* universal selector */
+      /* * {
+        background-color: #4d4d4d;
+       
+      } */
+
+      /* individual selector */
+      /* p {
+        background-color: #d1ea76;
+      } */
+      /* class and id selector */
+      /* .warning {
+        background-color: #ef9323;
+        color: #FFFFFF;
+      }
+      #danger {
+        background-color: #e93916;
+        color: #FFFFFF;
+      } */
+      /* and selector (chained) */
+      p.bg-black.text-white{
+        background-color: #000;
+        color: #ef9323;
+      }
+      /* combined selector */
+      /* span, li {
+        background-color: burlywood;
+      } */
+
+      /* inside an element */
+      div  div h1 span  {
+        background-color: violet;
+      }
+      /* direct child */
+      /* div > div > h1 > span  {
+        background-color: pink;
+      } */
+
+      /* sibling  ~ or + */
+      .sibling ~ h1 {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Starts</h1>
+
+    <div>
+      <h2>background-color</h2>
+    </div>
+
+    <div>Welcome to live class</div>
+     <span>Span is just a span, nothing more</span>
+    <p>We all know paragraph</p>
+    
+    <p class="bg-black text-white">APJ Trying</p>
+    
+    <ul>
+      
+      <li class="bg-black text-white">item1</li>
+      
+      <li class="bg-black text-white">item2</li>
+      
+      <li>item3</li>
+      
+      <li>item4</li>
+      
+      <li>item5</li>
+    
+    </ul>
+    
+   
+      
+      <div>
+        
+        <h1>inside <span>h2</span> </h1>
+        
+        <h1>inside <span>h2</span></h1>
+       
+        <h1>inside </h1>
+        
+        <h1>inside </h1>
+        
+      </div>
+      
+      <ul>
+        
+        <li>highlight me <a href="#">test</a></li>
+        
+        <li>highlight me</li>
+       
+      </ul>
+     
+   
+   
+    <section>
+     
+      <p class="sibling">Test 1</p>
+    
+      <p>Test 2</p>
+      
+      <p>Test 3</p>
+      
+      <p>Test 4</p>
+      
+      <p>Test 5</p>
+      
+      <h1>sibl</h1>
+     
+    </section>
+  </body>
+</html>
