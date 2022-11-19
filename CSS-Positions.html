@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positions</title>
+  </head>
+  <style>
+    * {
+      background-color: antiquewhite;
+    }
+    h1 {
+      text-align: center;
+    }
+    .container {
+      /* position: relative; */
+      margin: 10px;
+      padding: 15px;
+      border: 1px dotted black;
+      height: 500px;
+      width: 900px;
+    }
+    .absoulte-container{
+        position: relative;
+        margin: 10px;
+      padding: 15px;
+      border: 1px dotted black;
+      height: 500px;
+      width: 900px;
+    }
+    .pos {
+      border: 2px solid black;
+      width: 100px;
+      height: 100px;
+    }
+
+    #box-2-relative {
+      position: relative;
+      left: 150px;
+      top: 50px;
+    }
+
+    #box-2-absolute {
+      position: absolute;
+
+      top: 50px;
+      left: 200px;
+    }
+    #box-2-fixed{
+        position: fixed;
+        top: 20px;
+    }
+    #box-2-sticky{
+        position: sticky;
+        top: 50px;
+        left: 100px;
+    }
+  </style>
+  <body>
+    
+    <h1>CSS Positions</h1>
+    <h2>Relative Position</h2>
+    <div class="container">
+      <div class="pos">BOX-1</div>
+      <div class="pos" id="box-2-relative">BOX-2</div>
+      <div class="pos">BOX-3</div>
+      <div class="pos">BOX-4</div>
+    </div>
+    
+    <h2>Absoulte Position</h2>
+    <div class="absoulte-container">
+      <div class="pos">BOX-1</div>
+      <div class="pos" id="box-2-absolute">BOX-2</div>
+      <div class="pos">BOX-3</div>
+      <div class="pos">BOX-4</div>
+    </div>
+    <h2>Fixed Position</h2>
+    <div class="container">
+      <div class="pos">BOX-1</div>
+      <div class="pos" id="box-2-fixed">BOX-2 Fixed</div>
+      <div class="pos">BOX-3</div>
+      <div class="pos">BOX-4</div>
+    </div>
+
+    <h2>sticky Position</h2>
+    <div class="container">
+      <div class="pos">BOX-1</div>
+      <div class="pos" id="box-2-sticky">BOX-2-sticky</div>
+      <div class="pos">BOX-3</div>
+      <div class="pos">BOX-4</div>
+    </div>
+
+
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+        cupiditate! Commodi nulla vitae vel eos, doloremque mollitia in, a
+        quidem fugit dolores quisquam sapiente rem sed ut debitis libero totam,
+        tempore dolorem? Nulla dolore et repellat accusamus officiis iste,
+        dolorem sunt excepturi sit quae. Modi adipisci praesentium, sint quae
+        dolor eos doloribus fuga laborum! At dolore odio expedita quos, fuga
+        exercitationem quaerat ipsam eaque quibusdam deserunt minima quo
+        laudantium nulla vel ex! Voluptate nisi necessitatibus, minus blanditiis
+        amet quas molestiae non a cum ex similique. Quaerat eos in alias
+        accusamus at consequatur fugit sunt voluptates quam veniam? Culpa,
+        expedita laborum!
+      </p>
+    </div>
+    <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+          cupiditate! Commodi nulla vitae vel eos, doloremque mollitia in, a
+          quidem fugit dolores quisquam sapiente rem sed ut debitis libero totam,
+          tempore dolorem? Nulla dolore et repellat accusamus officiis iste,
+          dolorem sunt excepturi sit quae. Modi adipisci praesentium, sint quae
+          dolor eos doloribus fuga laborum! At dolore odio expedita quos, fuga
+          exercitationem quaerat ipsam eaque quibusdam deserunt minima quo
+          laudantium nulla vel ex! Voluptate nisi necessitatibus, minus blanditiis
+          amet quas molestiae non a cum ex similique. Quaerat eos in alias
+          accusamus at consequatur fugit sunt voluptates quam veniam? Culpa,
+          expedita laborum!
+        </p>
+      </div>
+  </body>
+</html>
