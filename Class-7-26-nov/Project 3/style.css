@@ -1,0 +1,33 @@
+*{
+    background-color: rgb(36, 33, 33);
+    color: whitesmoke;
+    
+}
+body{
+    margin:2% 5%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav>ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul>li{
+    list-style: none;
+    margin-right: 50px;
+    font-weight: 500;
+}
+
+.middle{
+    display: flex;
+    justify-content: space-between;
+}
+
