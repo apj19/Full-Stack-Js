@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <title>Static Position</title>
+</head>
+
+<style>
+    *{
+        background-color: black;
+        font-family: 'Poppins', sans-serif;
+        /* font-family: 'Dancing Script', cursive; */
+        color: white;
+    }
+.container{
+    display: flex;
+    justify-content:center ;
+    flex-direction: column;
+    align-items: center;
+    border-style: double;
+    margin: 50px;
+}
+.parent-div, .filer-content{
+    border: 2px dotted white;
+    /* height: 500px;
+    width: 800px; */
+    margin: 10px;
+}
+.filer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+
+}
+p{
+    margin: 50px;
+}
+
+
+.pos {
+      border: 2px solid white;
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.parent-div{
+    display: flex;
+   
+}
+
+.box-3{
+    left: 50px;
+    right: 50px;
+}
+</style>
+<body>
+    <div class="container">
+
+        <!-- <div class="parent-div" >
+            <h1>CSS POSITIONS</h1>
+            <ul>
+                <li> <h3>Static</h3> </li>
+                <li> <h3>Relative</h3> </li>
+                <li> <h3>Absolute</h3> </li>
+                <li> <h3>Fixed</h3> </li>
+                <li> <h3>Sticky</h3> </li>
+                
+              </ul>
+        </div> -->
+        
+        
+        <h1>Static Position</h1>
+        <div class="parent-div">
+            <div class="pos ">Box-1</div>
+            <div class="pos">Box-2</div>
+            <div class="pos box-3">Box-3</div>
+            <div class="pos">Box-4</div>
+            <div class="pos">Box-5</div>
+
+        </div>
+
+        <div class="filer-content">
+            <h3>Filer Content</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, officiis at quae praesentium consequuntur nisi illum quidem perferendis incidunt vitae possimus necessitatibus, iure temporibus doloribus. Mollitia minima quaerat ullam quis expedita quasi aspernatur atque consequuntur quidem ipsa asperiores sequi incidunt iure vero quisquam laboriosam esse ducimus, repudiandae a impedit eos vel iusto! Veniam, non saepe repellat adipisci reprehenderit laudantium consectetur quisquam ipsum velit nemo dicta iste voluptate ducimus necessitatibus iusto deserunt facilis molestias cum recusandae rerum culpa ex rem. Dolore temporibus sit exercitationem neque doloribus autem sint, omnis in adipisci quo quam modi asperiores expedita. A exercitationem distinctio illo deserunt possimus, nisi quasi, voluptatum non doloremque accusantium sit iste vero inventore aut, porro iusto explicabo deleniti optio! Distinctio quaerat blanditiis rem iste suscipit velit, deleniti repellat soluta eveniet? Inventore harum error iusto! Eveniet officiis minus ea doloribus, dolorum laudantium laborum accusamus eaque dolores sunt veniam ad, voluptas ab cumque corrupti maxime nisi unde voluptate reiciendis? Delectus dolorum architecto animi. Dolorum, itaque neque aut culpa aperiam debitis, repudiandae rem est ad ullam omnis aliquam excepturi sit quidem pariatur modi mollitia, fuga provident consequuntur nisi nostrum. Inventore, assumenda vel maxime id laudantium, ratione quibusdam vero autem ullam quis, iusto minima eum dicta?</p>
+        </div>
+
+        <div class="filer-content">
+            <h3>Filer Content</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia incidunt maxime aliquam obcaecati distinctio omnis ratione quas ex voluptatibus, illum aperiam, ipsam eum quisquam provident facilis porro optio. Vero hic perspiciatis ab in rem dolore quos itaque debitis ipsam omnis fuga sunt fugiat, officia eum? Ab aliquid voluptates blanditiis iste nobis nam, expedita neque cupiditate quisquam culpa suscipit delectus odio unde magni asperiores, adipisci earum laudantium pariatur possimus sequi, molestias excepturi. Nostrum magnam consequatur, consectetur iste odio nesciunt recusandae, nulla nobis officia maxime dignissimos minima. Doloremque, placeat! Exercitationem labore, a harum natus illum voluptatibus dolore enim officia fugiat qui aspernatur.</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

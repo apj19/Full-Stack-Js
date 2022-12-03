@@ -1,0 +1,107 @@
+
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+*{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    margin: 30px;
+    
+}
+.navbar-container{
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.navbar-container>div>img{
+    height: 40px;
+}
+.list{
+    display: flex;
+    /* justify-content: space-between; */
+    column-gap: 10px;
+    
+}
+/* .grow-list{
+    flex-grow: 0.5;
+   
+} */
+
+.list-item{
+    margin-right: 20px;
+    list-style-type: none;
+    font-weight: 200;
+    text-align: center;
+}
+li:first-child{
+    font-weight: 600;
+
+}
+
+
+
+.nav-button{
+    background-color: #6B3FA0;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    margin-right: 60px;
+   
+
+}
+
+.button-group{
+    margin-left: 350px;
+}
+
+.btn{
+    width: 200px;
+    height: 60px; 
+}
+.banner-container{
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+section>div>div{
+   margin-top: 50px;
+   
+  
+}
+section>div>div:first-child{
+    margin: 130px;
+    
+    
+   
+ }
+.heading-text{
+    font-size: 50px;
+}
+span{
+   color: #6B3FA0; 
+   
+}
+
+.description{
+    font-size: 14px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    
+}
+
+/* .banner-container>div>img{
+    height: 500px;
+    width: 800px;
+} */
+
+
