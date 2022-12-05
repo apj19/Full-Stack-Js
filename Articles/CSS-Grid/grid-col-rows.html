@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Grid</title>
+
+    <style>
+    .container>div{         
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 50px;
+    height:50px;  
+    
+}
+
+
+
+body{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+    
+}
+.container{
+     display: grid;
+     margin:10px;
+     
+    
+     grid-template-columns: repeat(4,1fr);
+     grid-template-rows:repeat(3,1fr) ;
+     padding: 10px;
+    gap: 10px; 
+    width: 400px;
+    height:200px;
+     
+    border: 1px double black;
+    background-color: whitesmoke;  
+}
+
+.container>div:first-child{
+    place-self: center;
+}
+
+.container>div:nth-child(3){ 
+    place-self: end;
+}
+
+    </style>
+        
+</head>
+
+
+<body>
+  <h1>CSS Grid</h1>
+    <main class="container">
+       <div>item-1</div>
+        <div>item-2</div>
+        <div>item-3</div>
+        <div>item-4</div>
+        <div>item-5</div>
+        <div>item-6</div>
+        <div>item-7</div>
+         
+    </main>
+
+   
+</body>
+</html>

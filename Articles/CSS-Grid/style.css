@@ -49,8 +49,13 @@ body{
     grid-column-start:4;
 }
 .container>div:nth-child(7){
-    grid-column: -3/-5;
+    grid-area: -2/-3/-1/-5;
 }
+
+
+
+
+
 
 
 
