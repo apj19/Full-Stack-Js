@@ -1,0 +1,109 @@
+
+body{
+    min-height:100vh;
+    margin: 0;
+
+    background-color: rgba(180, 151, 151, 0.712);
+    
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+main,header,footer,nav{
+    width: 100%;
+    text-align: center;
+}
+
+main{
+    flex-grow:1;
+    height: 70vh;
+    margin-top: 25rem;
+    color: #1E293B; 
+}
+
+header,footer{
+    position: fixed;
+    background-color: #1E293B;
+    color: whitesmoke;
+}
+header{
+    top: 0;
+}
+
+footer{
+    bottom:0;
+}
+
+nav{
+    background-color: white;
+    color:black;
+    border: 1px solid black;
+}
+
+div{
+    border: 1px dotted black;
+    margin: 10px;
+
+    height:100px;
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+main{
+   
+    display: grid;
+    place-content: center;
+}
+
+nav{
+    display:none;
+}
+
+
+/* medium Device */
+@media (min-width:768px){
+    body{
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke,gold);
+    }
+    nav{
+        display:block;
+    }
+
+    main{
+        display: grid;
+        margin-top: 15rem;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+/* larger Device */
+@media screen and (min-width:1024px){
+    body{
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke,firebrick);
+    }
+    
+    nav{
+        display: block;
+    }
+
+    main{
+       display: flex;
+       margin-top: 0;
+       align-items: center;
+       justify-content: center;
+    }
+    
+}
+
