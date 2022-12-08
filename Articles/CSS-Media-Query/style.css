@@ -5,6 +5,7 @@ body{
 
     background-color: rgba(180, 151, 151, 0.712);
     
+    
 
     display:flex;
     flex-direction: column;
@@ -106,4 +107,5 @@ nav{
     }
     
 }
+
 
