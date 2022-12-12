@@ -13,3 +13,5 @@
 4. [CSS Position](https://apj-cr.hashnode.dev/css-positions)
 
 5. [CSS Grid](https://apj-cr.hashnode.dev/css-grid-explained)
+
+6. [Media Query](https://apj-cr.hashnode.dev/why-we-need-media-queries)
