@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    
+}
+.hero-section{
+    background-color: #151515;
+    padding:0 5%;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+}
+
+header>div:nth-child(2)>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    list-style: none;
+
+}
+
+.header-rightmost-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:25px;
+    margin-right: 50px;
+
+}
+
+.header-rightmost-div>div:last-child>span{
+   
+    position: absolute;
+    top:40px;
+    right: 75px;
+}
+
+.eng-div{
+    margin-right: 10px;
+}
+
+
+
+.hero-img{
+    
+    background-image: url("./Assets/Photos/frontCards.png");
+    background-position: center;
+    
+    
+
+}
+
+.hero-img>h1{
+    font-size: 5rem;
+
+}
+
