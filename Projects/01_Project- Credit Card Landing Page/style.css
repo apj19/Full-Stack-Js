@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: 'Poppins', sans-serif;
     
 }
 .hero-section{
@@ -19,7 +20,7 @@ header>div:nth-child(2)>ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:20px;
+    gap:30px;
     list-style: none;
 
 }
@@ -28,7 +29,7 @@ header>div:nth-child(2)>ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:25px;
+    gap:35px;
     margin-right: 50px;
 
 }
@@ -36,27 +37,121 @@ header>div:nth-child(2)>ul{
 .header-rightmost-div>div:last-child>span{
    
     position: absolute;
-    top:40px;
-    right: 75px;
+    top:35px;
+    right: 60px;
 }
 
 .eng-div{
     margin-right: 10px;
 }
 
-
-
 .hero-img{
-    
-    background-image: url("./Assets/Photos/frontCards.png");
-    background-position: center;
-    
-    
-
+    height: 100vh;
 }
+
+
 
 .hero-img>h1{
     font-size: 5rem;
 
+}
+
+.card{
+    position: absolute;
+    height: 80vh;
+    width: 70%;
+    height:600px;
+}
+
+.back-card{
+    z-index: 1;
+    top:60px;
+    right: -20px;
+}
+
+.front-card{
+    z-index: 2;
+    top:120px;
+    right:-230px;
+
+}
+
+
+.hero-text{
+    z-index: 3;
+    margin-top: 8%;
+
+}
+
+.hero-text>h1{
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.one-card{
+    color:#F637EC;
+    font-weight: 500;
+}
+
+.hero-text>h1{
+    margin-bottom: 25px;
+}
+
+.hero-text>p{
+   font-size: 1.2rem;
+   font-weight: 300;
+   color: #CDCDCD;
+}
+
+.btn-pink{
+    height: 30px;
+}
+
+.hero-text-get{
+    margin-top: 5%;
+
+}
+.hero-text-get>span{
+    position: absolute;
+    font-size: 1.2rem;
+    left:100px;
+    z-index: 1;
+
+}
+
+.left-arrow{
+    margin-left:100px;
+    margin-bottom: 10px;
+}
+
+.numbers{
+    display: flex;
+    gap:40px;
+    font-size: 2rem;
+}
+
+.numbers>div>span>p{
+    font-size: 1rem;
+    font-weight: 300;
+
+}
+.numbers>div>span{
+    font-size: 1rem;
+
+}
+.numbers>div{
+    display: flex;
+    gap: 15px;
+}
+
+.plus-sign{
+    color:#F637EC;
+    font-size: 2rem;
+}
+
+/* section 2 starts */
+
+body>section:nth-child(2){
+    background-color: #292929;
 }
 
