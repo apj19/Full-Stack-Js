@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* #0C8BFD */
+
+.first-section{
+    background-color: black;
+    padding: 2% 5%;
+    color: rgb(182, 180, 180);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header>div:nth-child(2){
+    display: flex;
+    gap:25px;
+}
+header>div:last-child>button{
+    background-color:#0C8BFD ;
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+    color: white;
+}
+
+.first-page{
+    display: grid;
+    align-items: center;
+    margin-top: 5%;
+    
+    grid-template-columns: repeat(2,50%);
+    padding-bottom: 5%;
+}
+.first-page>div:first-child{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.first-page-content>div:first-child{
+    font-size: 3rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 5%;
+
+}
+.first-page-content>div:nth-child(2){
+    color: #9b9898;
+    margin-bottom: 5%;
+
+}
+
+em{
+    color: #0C8BFD;
+}
+
+.first-page-content>div:last-child>button{
+    /* background-color: #0C8BFD; */
+    height: 50px;
+    width: 140px;
+    color: white;
+    border-radius: 25px;
+}
+
+.try-buttom{
+    border: 1px white solid;
+    background-color: black;
+}
+.get-buttom{
+    background-color: #0C8BFD;
+}
+
+.first-page-logo-section{
+    display: grid;
+    
+    grid-template-columns: repeat(4,25%);
+    background-color: #1D1C1C;
+    padding: 2% 12%;
+    gap:25px;
+
+}
