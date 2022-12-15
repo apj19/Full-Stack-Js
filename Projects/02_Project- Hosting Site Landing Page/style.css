@@ -84,3 +84,63 @@ em{
     gap:25px;
 
 }
+
+/* big card section */
+.big-card-section{
+    padding: 5% 5%;
+    text-align: center;
+}
+
+.three-card-heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+
+}
+
+.three-card-heading>h1{
+    font-size: 3rem;
+    margin-bottom: 2%;
+}
+
+.three-card-heading>p{
+    
+    color: #9b9898;
+}
+
+.three-card{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 25px;
+
+}
+.three-card>div{
+    width: 350px;
+    height: 350px;
+    padding-top: 2%;
+    border: 2px rgb(160, 160, 163) solid;
+    border-radius:25px;
+}
+
+.three-card>div>img{
+    margin-bottom: 10%;
+
+}
+.three-card>div>h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+.three-card>div>p{
+    font-size: 1rem;
+    color: #9b9898;
+}
+
+.three-card>div:nth-child(2){
+    background-color: black;
+    border: none;
+    color: white;
+    position: relative;
+    bottom: 50px;
+}
