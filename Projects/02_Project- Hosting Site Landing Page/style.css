@@ -8,7 +8,7 @@
 
 .first-section{
     background-color: black;
-    padding: 2% 5%;
+    padding: 2% 12%;
     color: rgb(182, 180, 180);
 }
 header{
@@ -80,15 +80,15 @@ em{
     
     grid-template-columns: repeat(4,25%);
     background-color: #1D1C1C;
-    padding: 2% 12%;
+    padding: 2% 18%;
     gap:25px;
 
 }
 
 /* big card section */
 .big-card-section{
-    padding: 5% 5%;
-    text-align: center;
+    padding: 5% 12%;
+    
 }
 
 .three-card-heading{
@@ -99,7 +99,7 @@ em{
 }
 
 .three-card-heading>h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 2%;
 }
 
@@ -113,6 +113,7 @@ em{
    justify-content: space-between;
    align-items: center;
    gap: 25px;
+   margin-bottom: 15%;
 
 }
 .three-card>div{
@@ -121,6 +122,7 @@ em{
     padding-top: 2%;
     border: 2px rgb(160, 160, 163) solid;
     border-radius:25px;
+    text-align: center;
 }
 
 .three-card>div>img{
@@ -143,4 +145,242 @@ em{
     color: white;
     position: relative;
     bottom: 50px;
+}
+
+
+
+.big-card-section>div:nth-child(3){
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 5%;
+
+}
+
+.feature-section{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    
+}
+
+
+/* left-side */
+.left-side-f>div{
+  margin-bottom: 25px;
+    height: 100px;
+    width: 500px;
+    border-radius: 50px;
+    padding-left: 40px;
+    
+    border: 1px solid #9b9898;
+    
+    /* display: flex;
+    justify-content: start;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 85% 15%;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+}
+
+.left-side-f>div:first-child{
+    background-color: #0C8BFD;
+    color: white;
+}
+
+/* right-side-start */
+
+.right-side-part{
+    background-color: #1D1C1C;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    padding-top: 5%;
+    padding-left: 5%;
+    
+}
+
+.right-side-part>div{
+    height: 60px;
+    width: 350px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    background-color: rgb(17, 17, 17);
+    display: grid;
+    grid-template-columns: 10% 90% ;
+    padding-left: 25px;
+    align-items: center;
+    color: white;
+    font-weight: 300;
+}
+
+.right-side-part>div>div{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #9b9898;
+}
+
+
+.price-section{
+    position: relative;
+    padding: 5% 12%;
+    background-color: #1D1C1C;
+    
+}
+
+.price-section>.heading{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 5%;
+    text-align: center;
+
+}
+
+.left-arrow{
+    position: absolute;
+    top:120px;
+    left:15%
+}
+
+.right-arrow{
+    position: absolute;
+    top: 120px;
+    right: 15%;
+
+}
+
+.price-cards{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3,32%); 
+    gap:25px;
+    
+    
+}
+
+.price-cards>div{
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px 25px;
+
+    
+}
+.price-cards>div:nth-child(2){
+    background-color: #0C8BFD;
+    color: white;
+
+}
+
+.price-cards>div>div:first-child{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+
+}
+
+.price-cards>div>div:nth-child(2){
+    font-size: 3rem;
+    margin-bottom: 20px;
+
+
+}
+.price-cards>div>div:nth-child(2)>span{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #9b9898;
+}
+.price-cards>div:nth-child(2)>div:nth-child(2)>span{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #e7e2e2;
+}
+.price-cards>div>div:nth-child(3){
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+
+}
+.price-cards>div>div:nth-child(5)>div{
+    display: grid;
+    grid-template-columns: 10% 90%; 
+    margin:10px 0;
+    font-size: 0.8rem;  
+}
+.price-cards>div>div:nth-child(5){
+    margin-top: 25px;
+
+}
+
+.price-cards>div>div:last-child>button{
+    margin-top: 25px;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: #0C8BFD;
+    color: white;
+}
+
+.price-cards>div:nth-child(2)>div:last-child>button{
+    background-color: white;
+    color: #0C8BFD;
+
+}
+
+.price-cards>div:first-child>div:nth-child(4){
+    margin-bottom: 35px;
+
+}
+
+/* .testimony section */
+
+
+.testimony-section{
+    padding: 5% 12%;
+
+}
+
+.testimony-section>div:first-child>div{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    align-items: center;
+
+}
+.testimoney-heading{
+    font-size: 3rem;
+}
+.testimony-section>div:first-child>div:first-child{
+    margin-bottom: 50px;
+}
+
+.testimony-section>div:first-child>div:last-child{
+    margin-bottom: 50px;
+
+}
+
+.testimoney>div{
+    height: 300px;
+    width: 80%;
+    border-radius: 25px;
+    border: 1px solid #9b9898;
+    padding: 25px;
+  
+}
+.testimoney>div>div{
+    margin-bottom: 30px;
+}
+.org{
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color: #9b9898;
+}
+
+.testimoney>div:first-child{
+    background-color: #1D1C1C;
+    color: white;
+}
+
+progress{
+    width: 100%;
 }
