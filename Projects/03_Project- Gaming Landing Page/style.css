@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* colors  1. #F4694C */
+
+.first-section{
+    padding: 2% 10%;
+
+    background-image: url("./Assets/Photos/futuristic-bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    display: flex;
+    gap: 25px;
+   margin-right: 250px;
+}
+
+.nav-button>button{
+    height: 40px;
+    width: 90px;
+    background-color: inherit;
+    border: none;
+}
+.nav-button>button:last-child{
+
+    background-color: #F4694C;
+}
+
+.first-section>div{
+    display: grid;
+    justify-items: start;
+    
+    
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: 70% 30%;
+    margin-top: 25px;
+    height: 90vh;
+}
+
+
+.cell-1>div:first-child{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    margin-top: 120px;
+
+}
+
+.cell-1>div:last-child>p{
+    font-size: 0.9rem;
+    color: #817879;   
+    
+
+}
+
+.cell-3>button{
+    width: 150px;
+    height: 50px;
+    margin-right: 25px;
+}
+
+.cell-3>button:first-child{
+    background-color: #F4694C;
+}
+
+.cell-3>button:last-child{
+    border-color: white;
+    background-color: inherit;
+
+    
+}
+
+.cell-2{
+    place-self: center;
+    position: relative;
+    left:50px;
+    top:80px;
+}
+
+.cell-4{
+    position: relative;
+    font-size: 1.5rem;
+    place-self: center;
+    left:100px;
+
+}
+
+.cell-4>img:first-child{
+  position: absolute; 
+  left:-50px; 
+}
+
