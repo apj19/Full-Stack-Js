@@ -99,5 +99,14 @@ nav{
 .cell-4>img:first-child{
   position: absolute; 
   left:-50px; 
+  top:20px;
 }
+
+.cell-4>img:last-child{
+    position: absolute; 
+    top:90px;
+    right:-100px;
+    width:50px;
+    
+  }
 
