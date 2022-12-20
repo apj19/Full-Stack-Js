@@ -41,6 +41,7 @@ nav{
 .nav-button>button:last-child{
 
     background-color: #F4694C;
+    color: white;
 }
 
 .first-section>div{
@@ -78,6 +79,7 @@ nav{
 
 .cell-3>button:first-child{
     background-color: #F4694C;
+    color: white;
 }
 
 .cell-3>button:last-child{
@@ -185,6 +187,15 @@ nav{
     font-size: 0.9rem;
   }
 
+  .btn-card{
+    background-color: #F4694C;
+    border: none;
+    color: white;
+    height: 30px;
+    width: 100px;
+    font-size: 0.8rem;
+  }
+
   .actions{
     font-size: 12px;
     color: #ccc4c4;
@@ -288,15 +299,24 @@ font-weight: 500;
 
 
 
-.rec-4-games, .rec-4-games>div{
+.rec-4-games{
+  display: grid;
+  grid-template-columns: repeat(2,48%);
+  gap:60px;
+}
+
+.rec-4-games>div{
   display: grid;
   grid-template-columns: repeat(2,50%);
-  gap:25px;
+  gap:10px;
+
+  /* border: 1px dotted firebrick; */
+
 }
 
 
 .left-img-box{
-  width: 100%;
+  width: 250px;
   height: 300px;
 
 }
@@ -307,7 +327,212 @@ font-weight: 500;
     background-size: cover;
 
 }
+.c-2>div:first-child{
+  background-image: url("./Assets/Photos/Rectangle\ 76.png");
+    background-position: center;
+    background-size: cover;
 
+}
+.c-3>div:first-child{
+  background-image: url("./Assets/Photos/Rectangle\ 77.png");
+    background-position: center;
+    background-size: cover;
+
+}
+.c-4>div:first-child{
+  background-image: url("./Assets/Photos/Rectangle\ 78.png");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.c-1>div:last-child,
+.c-2>div:last-child,
+.c-3>div:last-child,
+.c-4>div:last-child{
+  /* padding:10px; */
+  place-self: center;
+}
+.c-1>div:last-child>h3,
+.c-2>div:last-child>h3,
+.c-3>div:last-child>h3,
+.c-4>div:last-child>h3{
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.c-1>div:last-child>p,
+.c-2>div:last-child>p,
+.c-3>div:last-child>p,
+.c-4>div:last-child>p{
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #F4694C;
+
+}
+
+.c-1>div:last-child>div,
+.c-2>div:last-child>div,
+.c-3>div:last-child>div,
+.c-4>div:last-child>div{
+  font-size: 0.8rem;
+  line-height: 25px;
+  margin-bottom: 25px;
+
+}
+
+.c-1>div:last-child>button,
+.c-2>div:last-child>button,
+.c-3>div:last-child>button,
+.c-4>div:last-child>button{
+  border:none;
+  height: 45px;
+  width: 130px;
+  color: white;
+}
+
+
+
+.most-played-section{
+  background-color: black;
+  color: white;
+  
+}
+
+.most-played-section>h1{
+  
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.most-played-section>div{
+  position: relative;
+}
+
+.img-1{
+  width: 350px;
+  height: 400px;
+  margin-bottom: 250px;
+  
+}
+
+.most-played-section>div>p{
+ position: absolute;
+ left:400px;
+ top:60px;
+}
+
+.img-2{
+  
+  position: absolute;
+  top:170px;
+  left:330px;
+  width: 880px;
+
+  
+}
+
+.img-3{
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top:210px;
+  left:400px;
+
+
+
+
+}
+
+.img-4{
+  position: absolute;
+  top:400px;
+  right:80px;
+
+  height: 200px;
+  width: 250px;
+
+}
+
+.gamer{
+  position: relative;
+  text-align: center;
+}
+
+.gamer>img{
+  /* background-image: url("./Assets/Photos/Rectangle\ 606.png");
+    background-position: center;
+    background-size: cover; */
+    opacity: 0.3; 
+    margin-top:50px;
+
+    width: 100%;
+    height:80vh;
+
+}
+
+.gamer>div{
+  position: absolute;
+  top:200px;
+  width: 100%;
+  
+  z-index: 2;
+}
+
+.gamer>div>h1{
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.gamer>div>p{
+  font-size: 0.8rem;
+  color: #ccc4c4;
+  margin-bottom: 50px;
+}
+
+.gamer>div>button{
+  width: 100px;
+  height:50px;
+  border: none;
+  color: white;
+}
+
+footer{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap:40px;
+  margin-top: 80px;
+}
+
+footer>div:first-child>p{
+  font-size: 0.8rem;
+  color: #ccc4c4;
+  margin-top: 10px;
+}
+footer>div:first-child>img{
+  height: 40px;
+}
+
+footer>div:first-child>div{
+  margin-top: 25px;
+}
+
+footer>div:first-child>div>img{
+  margin-right: 15px;
+}
+
+footer>div>h4{
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+footer>div>p{
+  font-size: 0.8rem;
+  color: #ccc4c4;
+  margin-bottom: 20px;
+
+}
 
 
 
