@@ -17,7 +17,8 @@ body>section{
 
     background-image: url("./Assets/Photos/futuristic-bg.png");
     background-size: cover;
-    background-position: center;color: white;
+    background-position: center;
+    color: white;
 }
 
 nav{
