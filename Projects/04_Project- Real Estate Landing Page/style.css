@@ -84,7 +84,7 @@ body>div>img{
     width: 120px;
 }
 
-.gallery-section{
+.gallery-section, .features-section, .last-section{
     background-color:#d8dadb  ;
     
 }
@@ -215,3 +215,110 @@ color: #3d3af5;
 
 
 /* #F6F8FA */
+
+.features-section>div{
+    width: 100%;
+    height:80vh;
+    /* border: 1px solid royalblue; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:100px;
+    /* place-items: center; */
+    align-items: center;
+
+}
+
+.feature-explain>h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.feature-explain>p{
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.feature-explain>button{
+    border: none;
+    width: 150px;
+    height:40px;
+    color:white;
+    border-radius: 20px;
+}
+
+.features-1{
+    position: relative;
+    /* border: 1px solid rgb(225, 65, 65); */
+    /* width: 80%;
+    height: 80%; */
+    margin-top: 100px;
+
+}
+
+.features-1>img:first-child{
+    /* background-image: url("./Photos/featuresImage1.png");
+    background-size: cover;
+    background-position: center; */
+    position: absolute;
+    bottom:-250px;
+    left:-150px;  
+
+}
+
+.features-1>img:last-child{
+    position: absolute;
+    width:520px;
+    height: 500px;
+    border-radius: 25px;
+    bottom: -120px;
+    left:-25px;
+}
+
+
+.features-2{
+    position: relative;
+    
+
+}
+.features-2>img:first-child{
+    position: absolute;
+    top:-150px;
+    left:-80px;
+
+
+
+}
+
+.features-2>img:last-child{
+    position: absolute;
+    width:520px;
+    height: 500px;
+    border-radius: 25px;
+    left: -20px;
+    bottom:-300px;
+}
+
+.last-section{
+    padding-top: 200px;
+}
+
+.last-section>div{
+    width: 100%;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    
+   text-align: center;
+}
+
+.last-section>div>h1{
+    font-size: 3.5rem;
+    padding-top: 50px;
+}
+
+.last-section>div>p{
+    font-size: 1rem;
+    padding-top: 50px;
+    color: #d8dadb;
+}
+
