@@ -6,7 +6,7 @@
 body{   
     width: 1360px;
     background-color: #0F0F10; 
-    border: 2px solid red;
+    /* border: 2px solid red; */
     color: white; 
 }
 
@@ -287,27 +287,109 @@ margin-bottom: 150px;
     width: 150px;
     border-radius: 5px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     
 }
 
 .headset>div>img{
     width: 100px;
     height:120px;
-    position: relative;
-    left:25px;
-    bottom: 50px;
+    /* position: relative; */
+    margin-left: 25px;
+    margin-bottom: 15px;
 }
 .headset>div>div{
     display: flex;
-    
+    justify-content: space-around;
+    /* align-items: center; */
+    /* position: absolute; */
+    margin-bottom: 15px;
+}
+
+
+.bag-bcg{
+    background-color: black;
+    width:30px;
+    height: 30px;
+   display: flex;
+    justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom:10px;
-    left:10px;
+    border-radius: 4px;
+    margin-top: 15px;
+    
 }
 
 .bag{
-    width:25px;
-    height: 25px;
-    right:10px;
+    width:15px;
+    height: 15px;
+    /* right:10px; */
+}
+
+.p-number{
+    font-size: 0.9rem;
+    color: #9a9a9b
+}
+
+.hedset-name{
+    font-size: 0.9rem;
+
+}
+
+footer{
+    padding:5% 15%;
+    display: grid;
+    grid-template-columns: repeat(3,2fr) 3fr;
+}
+
+footer>div:nth-child(2)>h3,
+footer>div:nth-child(3)>h3{
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+footer>div:nth-child(2)>p,
+footer>div:nth-child(3)>p{
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    color: #9a9a9b;
+}
+
+.social-media{
+    display: flex;
+    gap:1rem;
+    margin-top: 25px;
+}
+
+.email-subscribe{
+    position: relative;
+}
+
+.email-subscribe>input{
+    width:300px;
+    height: 60px;
+    background-color: #181A1B;
+    border: none;
+    border-radius: 10px;
+}
+
+.email-subscribe>input::placeholder{
+   padding-left: 25px;
+}
+
+.email-subscribe>button{
+    background-color: black;
+    color: white;
+    border: none;
+    height:40px;
+    width: 130px;
+    border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   position: absolute;
+   right:30px;
+   top:10px;
 }
