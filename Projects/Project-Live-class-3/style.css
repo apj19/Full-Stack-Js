@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+}
+body{
+    width: 1360px;
+   
+    background-color: #2B2923;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:3% 8%;
+}
+nav>div{
+    display: flex;
+    align-items: center;
+    gap:3rem;
+}
+/* #857A32 */
+
+nav>div>button{
+    border: 1px solid #857A32;
+    color: #857A32;
+    background-color: inherit;
+    height: 40px;
+    border-radius: 10px;
+    width: 130px;
+}
+.mid-section{
+    padding:3% 8%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-content: center;
+}
+
+.mid-section>div>h1{
+    font-size: 3rem;
+}
+
+.mid-section>div>p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.photo{
+    padding:3% 8%;
+
+}
+.photo>img{
+    width: 100%;
+
+
+}

@@ -6,6 +6,10 @@
     background-color: white;
     font-family: 'Poppins', sans-serif;
 }
+
+body{
+    width: 1360px;
+}
 .container{
     margin: 30px;
     

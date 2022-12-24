@@ -4,6 +4,9 @@
 *{
     font-family: 'Orbitron', sans-serif;
 }
+body{
+    width: 1360px;
+}
 .container{
     margin: 50px 60px;
     margin-bottom: 100px;
