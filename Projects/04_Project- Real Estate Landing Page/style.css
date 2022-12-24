@@ -3,9 +3,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    width:1360px;
+}
+
 body>section{
     padding:3% 10%;
-
 }
 
 /* Gloable style */
@@ -45,7 +48,7 @@ nav>img{
 
 }
 main{
-    height: 90vh;
+    height: 600px;
 }
 
 main>h1{
@@ -66,21 +69,44 @@ main>button{
     margin-top: 25px;
 }
 
-body>div{
-    display: flex;
+
+.logo-section{
+    position: relative;
+    padding:0 12%;
+
+}
+.logo-section>div{
+    /* display: flex;
     height: 150px;
     width: 83%;
     justify-content: space-between;
     align-items: center;
-    margin: 0 5%;
     position: absolute;
-    top:126vh;
     background-color: white;
     padding:0 50px;
+    border-radius: 25px; */
+    /* top:810px; */
+    /* margin: 0 5%; */
+
+    /* border: 1px solid red; */
+    height: 150px;
+    width: 83%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 25px;
+    padding:0 50px;
+    position: absolute;
+    left:70px;
+    top:-75px;
+
+
+
+
 }
 
-body>div>img{
+.logo-section>div>img{
     width: 120px;
 }
 
@@ -99,7 +125,7 @@ body>div>img{
     display: flex;
     gap:25px;
     width: 100%;
-    height: 55vh;
+    height: 350px;
     /* border: 1px solid royalblue; */
     position: relative;
     margin-bottom: 180px;
@@ -218,7 +244,7 @@ color: #3d3af5;
 
 .features-section>div{
     width: 100%;
-    height:80vh;
+    height:600px;
     /* border: 1px solid royalblue; */
     display: grid;
     grid-template-columns: repeat(2,1fr);

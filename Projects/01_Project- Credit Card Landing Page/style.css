@@ -3,6 +3,10 @@
     font-family: 'Poppins', sans-serif;
     
 }
+
+body{
+    width: 1360px;
+}
 .hero-section{
     background-color: #151515;
     padding:0 5%;
