@@ -96,9 +96,44 @@ console.log("Hi! APJ");
 // console.log(strarr);//[ 'at start', 'items1', 'item2', 'item3' ]
 
 
-const strarr=["items1","item2","item3"];
+// const strarr=["items1","item2","item3"];
 
-let lastelement=strarr.pop();
-console.log(lastelement);//item3
-console.log(strarr);//[ 'items1', 'item2' ]
+// let lastelement=strarr.pop();
+// console.log(lastelement);//item3
+// console.log(strarr);//[ 'items1', 'item2' ]
+
+
+// const strarr=["items1","item2","item3"];
+
+// let element=strarr.shift();
+// console.log(element);//items1
+// console.log(strarr);//[ 'item2', 'item3' ]
+
+//Splice
+// const runs=[32,57,12,48,81,99];
+
+// let deleteelement= runs.splice(1,2); 
+// console.log(deleteelement);//[ 57, 12 ]
+// console.log(runs);//[ 32, 48, 81, 99 ]
+
+
+// const run=[0,1,2,3,4,5,6];
+
+// run.splice(1,2,99,99,99);
+// console.log(run); //[ 0, 99, 99, 99,3,  4,  5,  6]
+
+// const run1=[0,1,2,3,4,5,6]c
+// run1.splice(3,1,88,88,"new-elements");
+// console.log(run1);// [ 0, 1, 2, 88, 88, 'new-elements', 4, 5, 6 ]
+
+ const runs=[0,1,2,3,4,5,6]
+
+ let copyarray= runs.slice(0,3);
+ console.log(copyarray);
+ //clone array
+ let clonearray=runs.slice();
+ console.log(clonearray);//[0, 1, 2, 3,4, 5, 6]
+
+
+
 
