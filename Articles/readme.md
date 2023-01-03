@@ -15,3 +15,5 @@
 5. [CSS Grid](https://apj-cr.hashnode.dev/css-grid-explained)
 
 6. [Media Query](https://apj-cr.hashnode.dev/why-we-need-media-queries)
+
+7. [JS Array Method](https://apj-cr.hashnode.dev/array-methods-in-javascript)
