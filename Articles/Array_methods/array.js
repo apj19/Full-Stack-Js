@@ -205,6 +205,10 @@ console.log(numArray);// [ 10, 12, 25, 5, 84 ]
 
 numArray.sort((a,b)=>a-b);
 console.log(numArray);// 5, 10, 12, 25, 84 ]
+console.log(numArray);// 5, 10, 12, 25, 84 ]
+console.log(numArray);// 5, 10, 12, 25, 84 ]
+console.log(numArray);// 5, 10, 12, 25, 84 ]
+console.log(numArray);// 5, 10, 12, 25, 84 ]
 
 
 
