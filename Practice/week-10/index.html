@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <title>Dom Manupulation</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: #2a2a2a;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+
+        h3{
+            position: relative;
+            top: 100px;
+        }
+        a:visited{
+            color: #E842FF;
+        }
+
+        .navbar{
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            background-color: #2a2a2a;
+            z-index: 2;
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .namelink, .gitlink {
+            letter-spacing: 5px;
+            text-decoration: none;
+           
+        }
+        .namelink:hover, .gitlink:hover{
+            text-decoration: underline;
+        }
+
+        
+
+        /* p{
+            color: red;
+        } */
+
+        .addsquare{
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        background-color: #eb902a;
+        }
+        /* from-[#8738FF] to-[#E842FF] */
+        .addscale{
+            transform: rotate(45deg) scale(1.5);
+            background-image: linear-gradient(to right, #eb902a , #E842FF);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <p>Coded by <a href="https://www.linkedin.com/in/akshay-jadhav-01737711b/" target="_blank" class="namelink">Akshay Jadhav</a></p>
+        <a href="https://github.com/apj19/Logos" target="_blank" class="gitlink">Github</a>
+      </nav>
+    <!-- <div class="addsquare">
+
+    </div> -->
+
+
+    <h3>Number of Clicks: <span id="count">0</span></h3>
+    
+  
+    <script type="text/javascript">
+
+        let body= document.body;
+        let num=1;
+        console.log(body);
+
+        body.addEventListener('click',function(event){
+            let x = event.clientX 
+            let y = event.clientY 
+            // console.log("Coordinate x: " + x, 
+            //             "Coordinate y: " + y);
+            
+            // Creating new Div            
+            const newdiv = document.createElement("div");
+            let newid="square"+num;
+            newdiv.id=newid;
+            let counter=document.getElementById("count");
+            counter.innerText=num;
+            num++;
+            
+            newdiv.style.left=x+"px";
+            newdiv.style.top=y-30+"px";
+            newdiv.className += " addsquare";
+            body.appendChild(newdiv);
+
+            
+            setTimeout(() => {
+                newdiv.className += " addscale";
+                  
+            }, 500);
+
+            setTimeout(() => {
+                const element = document.getElementById(newid);
+                element.remove();
+                
+            }, 1000);
+        //  node.style.color = 'pink';
+        
+         
+        //  let justadded=document.getElementById("demo")
+        //  document.getElementById("demo").id = "newid";
+        
+        });
+
+        
+        
+    </script>
+</body>
+</html>

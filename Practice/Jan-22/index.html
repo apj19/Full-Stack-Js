@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- what is document 
+    1. how select id, class, tag, tag name
+    2. query selector, query we will use most time
+    3. aler,conforim,promant
+    3. innerhtml,innertext
+
+    -->
+     <h1>Jascript bootCamp</h1>
+     <ul></ul>
+
+
+     <button onclick="math()" id="btn">Submit</button>
+     
+
+     <script>
+         let body=document.querySelector('body');
+         
+        const list=`
+        <li>APJ</li>
+     <li>Akshay</li>
+     <li>Jadhav</li>`;
+
+     let ul= document.querySelector('ul');
+     ul.innerHTML=list;
+
+     //create element on screen
+
+     let title= document.createElement('h1');
+    //  title.innerText="APJ HEading";
+    title.textContent="New title creating";
+    // console.log(title);
+    //  body.appendChild(title);
+    //remove child---home work
+
+    
+
+
+    ///loops in JS
+    
+        for (let i = 1; i < 5; i++) {
+            let p= document.createElement('p');
+            p.style.
+            p.id="fsjs"+i;
+            p.innerText=i;
+            body.appendChild(p);
+            
+        }
+     //////////
+
+     
+         
+
+     </script>
+</body>
+
+
+</html>
