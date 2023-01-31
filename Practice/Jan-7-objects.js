@@ -72,3 +72,6 @@ const obj5 = {
 
 console.log(obj5.printComic().printComic().printComic());
 // console.log(obj5.printaComic());
+///false value
+
+let a=NaN;
