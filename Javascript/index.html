@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Prototype</h1>
+</body>
+<script>
+    // let a = { name: "akshay" }
+
+    // let b = { emp: "cogmizant" };
+    // b.prototype = a;
+    // console.log(b);
+    // var a = 5;
+    // function test() {
+    //     var a = 10;
+    //     let b = 15;
+    //     console.log(a);
+    // };
+    // test();
+    // console.log(a);
+    // console.log(b);
+
+    function New() {
+        this.name = 'akshay';
+        this.lname = '';
+        this.log = function () {
+            console.log(this.name);
+        }
+    }
+
+    function Newextend() {
+        this.status = "extended"
+    }
+
+    let a = new New();
+
+    let b = new Newextend();
+    console.log(b);
+    b._proto_ = a;
+    console.log(b.name);
+    // console.log(typeof (a));
+    // console.log(a);
+    // a.name = "jadhav"
+    // a.log();
+
+
+
+
+</script>
+
+</html>

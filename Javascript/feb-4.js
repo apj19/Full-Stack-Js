@@ -1,8 +1,13 @@
 ///revision
 
 // node js
+let a;
+n={}
 console.log(a);
-let a=10;
+console.log(n);
+console.log(typeof(n));
+
+
 
 
 
