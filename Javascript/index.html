@@ -27,28 +27,55 @@
     // console.log(a);
     // console.log(b);
 
-    function New() {
-        this.name = 'akshay';
-        this.lname = '';
-        this.log = function () {
-            console.log(this.name);
-        }
-    }
+    // function New() {
+    //     this.name = 'akshay';
+    //     this.lname = '';
+    //     this.log = function () {
+    //         console.log(this.name);
+    //     }
+    // }
 
-    function Newextend() {
-        this.status = "extended"
-    }
+    // function Newextend() {
+    //     this.status = "extended"
+    // }
 
-    let a = new New();
+    // let a = new New();
 
-    let b = new Newextend();
-    console.log(b);
-    b._proto_ = a;
-    console.log(b.name);
+    // let b = new Newextend();
+    // console.log(b);
+    // b._proto_ = a;
+    // console.log(b.name);
     // console.log(typeof (a));
     // console.log(a);
     // a.name = "jadhav"
     // a.log();
+    class Supplier {
+        constructor(name, lname) {
+            this.name = name;
+            this.lname = lname;
+        }
+
+        show() {
+            console.log("Class method main");
+        }
+    }
+
+    class ChildSupplier extends Supplier {
+        show() {
+            console.log("Clas method Child");
+
+        }
+    }
+
+    let x = new Supplier();
+    x.name = "APJ";
+    x.lname = "Jadhav";
+    x.show();
+
+    let y = new ChildSupplier("child");
+
+    console.log(y.name);
+
 
 
 
