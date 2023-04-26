@@ -49,32 +49,73 @@
     // console.log(a);
     // a.name = "jadhav"
     // a.log();
-    class Supplier {
-        constructor(name, lname) {
-            this.name = name;
-            this.lname = lname;
-        }
+    // class Supplier {
+    //     constructor(name, lname) {
+    //         this.name = name;
+    //         this.lname = lname;
+    //     }
 
-        show() {
-            console.log("Class method main");
-        }
+    //     show() {
+    //         console.log("Class method main");
+    //     }
+    // }
+
+    // class ChildSupplier extends Supplier {
+    //     show() {
+    //         console.log("Clas method Child");
+
+    //     }
+    // }
+
+    // let x = new Supplier();
+    // x.name = "APJ";
+    // x.lname = "Jadhav";
+    // x.show();
+
+    // let y = new ChildSupplier("child");
+
+    // console.log(y.name);
+
+    function f1() {
+        console.log("f1");
+        f2();
     }
 
-    class ChildSupplier extends Supplier {
-        show() {
-            console.log("Clas method Child");
+    function f2() {
+        console.log("f2");
+        setTimeout(() => {
+            console.log("timeout");
+        }, 0);
+        f3();
+        f3();
 
-        }
+        f3();
+
+        f3();
+
+        f3();
+        f3();
+        f3();
+        f3();
+        f3();
+        f3();
+        f3();
+        f3();
+        f3();
+        f3();
+        f3();
+        f3();
+        f3();
+
+
     }
 
-    let x = new Supplier();
-    x.name = "APJ";
-    x.lname = "Jadhav";
-    x.show();
+    function f3() {
+        console.log("f3");
 
-    let y = new ChildSupplier("child");
+    }
 
-    console.log(y.name);
+    f1();
 
 
 
