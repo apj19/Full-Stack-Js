@@ -76,47 +76,96 @@
 
     // console.log(y.name);
 
-    function f1() {
-        console.log("f1");
-        f2();
-    }
+    // function f1() {
+    //     console.log("f1");
+    //     f2();
+    // }
 
-    function f2() {
-        console.log("f2");
-        setTimeout(() => {
-            console.log("timeout");
-        }, 0);
-        f3();
-        f3();
+    // function f2() {
+    //     console.log("f2");
+    //     setTimeout(() => {
+    //         console.log("timeout");
+    //     }, 0);
+    //     f3();
+    //     f3();
 
-        f3();
+    //     f3();
 
-        f3();
+    //     f3();
 
-        f3();
-        f3();
-        f3();
-        f3();
-        f3();
-        f3();
-        f3();
-        f3();
-        f3();
-        f3();
-        f3();
-        f3();
-        f3();
+    //     f3();
+    //     f3();
+    //     f3();
+    //     f3();
+    //     f3();
+    //     f3();
+    //     f3();
+    //     f3();
+    //     f3();
+    //     f3();
+    //     f3();
+    //     f3();
+    //     f3();
 
 
-    }
+    // }
 
-    function f3() {
-        console.log("f3");
+    // function f3() {
+    //     console.log("f3");
 
-    }
+    // }
 
-    f1();
+    // f1();
 
+
+    // let propm = new Promise((res, rej) => {
+    //     let a = 5
+    //     setTimeout(() => {
+    //         // console.log("inside settimeout");
+    //         if (a > 6) {
+    //             return res("success");
+    //         } else {
+    //             return rej("failure");
+    //         }
+
+    //     }, 1000)
+    // });
+
+    // propm.then(value => { console.log(value) }).catch(err => {
+    //     console.log(err);
+    //     throw Error("rejected");
+    // });
+    // console.log("not wating for promise");
+
+    // log(propm())
+    // let a = 10;
+    // let b = 10;
+    // console.log(propm(a, b));
+    // console.log("not wating for promise");
+    // const myPromise = new Promise((resolve, reject) => {
+    //     setTimeout(() => {
+    //         resolve('this is the eventual value the promise will return');
+    //     }, 300);
+    // });
+
+    // console.log(myPromise);
+
+    // log(propm())
+    // let a = 10;
+    // let b = 10;
+    // console.log(propm(a, b));
+    // console.log("not wating for promise");
+    // const myPromise = new Promise((resolve, reject) => {
+    //     setTimeout(() => {
+    //         resolve('this is the eventual value the promise will return');
+    //     }, 300);
+    // });
+
+    // console.log(myPromise);
+    const a = [12, 23];
+
+    const [k] = a;
+    console.log(k);
 
 
 
