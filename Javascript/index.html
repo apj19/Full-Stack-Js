@@ -439,6 +439,137 @@
     // console.log(obj1);
     // console.log(obj2);
 
+    ///closure////////////
+
+    // function closure() {
+    //     let name = "akshay";
+    //     let count = 0;
+
+    //     function inner() {
+    //         console.log("inner funtion called", name);
+    //         count++;
+    //         console.log(count);
+    //     }
+
+    //     return {
+    //         inner
+    //     }
+    // }
+
+    // const ref = closure();
+
+    // ref.inner();
+    // ref.inner();
+
+    // function createBase(base) {
+    //     let count = base;
+    //     function addbase(num) {
+    //         return count + num;
+    //     }
+
+    //     return {
+    //         addbase
+    //     }
+    // }
+
+    // const b = createBase(6);
+
+    // console.log(b.addbase(10));
+    // console.log(b.addbase(21));
+
+
+    //curyying
+
+    // function curry(a, b) {
+    //     console.log("origional function", a, b);
+    // }
+    // curry(5, 6);
+
+    // function c(a) {
+    //     return function (b) {
+    //         return function (c) {
+    //             console.log(a + b + c);
+    //         }
+    //     }
+    // }
+
+    // c(5)(6)(1);
+
+    function evl(type, a, b) {
+        if (type == 'sum') {
+            return console.log(a + b);
+        }
+
+        if (type == 'mul') {
+            return console.log(a * b);
+        }
+    }
+
+    // evl('sum', 5, 4);
+    // evl('mul', 5, 4);
+
+
+    // function cevl(type) {
+    //     if (type == 'sum') {
+    //         return function (a) {
+    //             return function (b) {
+    //                 console.log(a + b);
+    //             }
+    //         }
+    //     }
+
+    //     if (type == 'mul') {
+    //         return function (a) {
+    //             return function (b) {
+    //                 console.log(a * b);
+    //             }
+    //         }
+    //     }
+    // }
+
+    // cevl('sum')(5)(4);
+    // cevl('mul')(5)(4);
+
+    // function t(a = 0) {
+    //     console.log(a);
+    // }
+    // t(10);
+
+    // let str = "ABCD";
+    // let str1 = "BD";
+
+    // let strarr = str.split('');
+    // let str1arr = str1.split('');
+
+
+    // let startingChar = str1arr[0];
+    // let index = strarr.findIndex((v) => v == startingChar);
+    // console.log(index);
+    // for (let i = 1; i < str1arr.length; i++) {
+    //     if (strarr.findIndex((v) => v == str1arr[i]) < index) {
+    //         console.log("false");
+    //     }
+
+    // }
+
+
+    //////8888Callback??????????
+    console.log("start");
+    function action(name, cb) {
+        setTimeout(() => {
+            cb(name)
+        }, 1000)
+    }
+
+    action("apj callback", (name) => console.log(name));
+
+    console.log("end");
+
+
+
+
+
+
 
 
 
