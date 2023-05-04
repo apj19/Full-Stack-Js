@@ -554,16 +554,101 @@
 
 
     //////8888Callback??????????
-    console.log("start");
-    function action(name, cb) {
-        setTimeout(() => {
-            cb(name)
-        }, 1000)
+    // console.log("start");
+    // function action(name, cb) {
+    //     setTimeout(() => {
+    //         cb(name)
+    //     }, 1000)
+    // }
+
+    // function video(title, cb) {
+    //     setTimeout(() => {
+    //         cb(title)
+    //     }, 1000)
+    // }
+
+    // action("apj callback", (name) => {
+    //     console.log(name);
+    //     video("2ndcallback", (value) => console.log("2nd callback called", value))
+    // });
+
+    // console.log("end");
+
+
+    // const prom = new Promise((res, rej) => {
+    //     setTimeout(() => {
+    //         if (false) {
+    //             return res("completed")
+    //         } else {
+    //             return rej("failed")
+    //         }
+
+    //     }, 1000)
+    // });
+
+    // prom.
+    //     then((v) => console.log(v))
+    //     .catch((e) => console.log(e))
+    //     .finally((f) => console.log("finally run"));
+
+
+    // function one(name) {
+    //     return new Promise((res, rej) => {
+    //         setTimeout(() => {
+    //             res(`Promise-1 : ${name}`)
+    //         }, 1000)
+    //     })
+    // }
+
+    // function two(name) {
+    //     return new Promise((res, rej) => {
+    //         setTimeout(() => {
+    //             res(`Promise-2 : ${name}`)
+    //         }, 1000)
+    //     })
+    // }
+
+    // function three(name) {
+    //     setTimeout(() => {
+    //         console.log(name);
+    //     }, 1000)
+    // }
+
+    // one("one").then((v) => {
+    //     console.log(v);
+    //     return two("two");
+    // }).then((v) => console.log(v));
+
+
+    const obj = {
+        name: 'apj'
     }
 
-    action("apj callback", (name) => console.log(name));
+    function test(num) {
+        console.log("call " + this.name + num);
+    }
 
-    console.log("end");
+    test.call(obj, 25);
+
+    function test1(num, desc) {
+        console.log("apply " + this.name + num + desc);
+    }
+
+    test1.apply(obj, [25, "apply called"]);
+
+
+    function test2(num, desc) {
+        console.log("bind " + this.name + num + desc);
+    }
+
+    const bindf = test2.bind(obj);
+
+    bindf(35, "bind done")
+
+
+
+
+
 
 
 
