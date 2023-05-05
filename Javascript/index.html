@@ -620,30 +620,86 @@
     // }).then((v) => console.log(v));
 
 
-    const obj = {
-        name: 'apj'
+    // const obj = {
+    //     name: 'apj'
+    // }
+
+    // function test(num) {
+    //     console.log("call " + this.name + num);
+    // }
+
+    // test.call(obj, 25);
+
+    // function test1(num, desc) {
+    //     console.log("apply " + this.name + num + desc);
+    // }
+
+    // test1.apply(obj, [25, "apply called"]);
+
+
+    // function test2(num, desc) {
+    //     console.log("bind " + this.name + num + desc);
+    // }
+
+    // const bindf = test2.bind(obj);
+
+    // bindf(35, "bind done")
+
+    // let n=5;
+
+    // function sum(n) {
+    //     if (n == 1) {
+    //         return 1;
+    //     } else {
+    //         return n + sum(n - 1);
+    //     }
+    // }
+
+    // console.log(sum(2));
+
+    const obj = [
+        {
+            name: 'menu-1',
+            lname: "ssf",
+            subitems: [
+                {
+                    name: "menu-2",
+                    link: 'dsds'
+                }
+            ]
+        },
+        {
+            name: 'menu-3',
+            lname: "ssf",
+            subitems: [
+                {
+                    name: "menu-4",
+                    link: 'dsds'
+                },
+                {
+                    name: "menu-5",
+                    link: 'dsds'
+                }
+            ]
+        }
+    ]
+    const result = [];
+
+    for (const item of obj) {
+        for (const key in item) {
+            if (key === "name") {
+                result.push(item[key])
+            } else if (key === "subitems") {
+
+                item[key].forEach(e => { result.push(e.name) });
+
+            }
+        }
     }
 
-    function test(num) {
-        console.log("call " + this.name + num);
-    }
-
-    test.call(obj, 25);
-
-    function test1(num, desc) {
-        console.log("apply " + this.name + num + desc);
-    }
-
-    test1.apply(obj, [25, "apply called"]);
+    console.log(result);
 
 
-    function test2(num, desc) {
-        console.log("bind " + this.name + num + desc);
-    }
-
-    const bindf = test2.bind(obj);
-
-    bindf(35, "bind done")
 
 
 
