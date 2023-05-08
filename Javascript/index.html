@@ -710,8 +710,131 @@
 
     // // console.log(sumofDigits(54321));
     // console.log("apj");
-     // // console.log(sumofDigits(54321));
+    // // console.log(sumofDigits(54321));
     // console.log("apj");
+
+    // const person = {
+    //     name: 'ram',
+    //     age: 30
+    // }
+    // const res = [];
+
+    // for (const key in person) {
+    //     let temp = [];
+    //     temp.push(key);
+    //     temp.push(person[key]);
+    //     res.push(temp);
+
+    // }
+
+    // console.log(res);
+
+    // const input = [2, 7, 11, 4, -2];
+    // const output = [20, 15, 11, 18, 24];
+
+
+    // const result = [];
+
+    // for (let i = 0; i < input.length; i++) {
+    //     const temarray = [...input];
+    //     temarray.splice(i, 1);
+
+    //     // console.log(temp);
+    //     const sum = temarray.reduce((a, b) => a + b);
+    //     result.push(sum);
+
+    // }
+
+    // console.log(result);
+
+    // const input = { a: 1, b: 2, c: 3, d: 10, e: 12 }
+    // const input1 = { a: 2, e: 12, f: 6, d: 10 }
+    // const output = {}
+
+    // for (const key in input) {
+    //     if (input1[key] == input[key]) {
+    //         output[key] = input[key];
+    //     }
+
+    // }
+
+    // console.log(output);
+
+    // const input = [1, 2, -2, 11, 7, 1];
+    // const input = [1, 4, 7, 2, 4, 7];
+
+
+    // let largest = 0;
+    // let secondLarges = 0;
+
+    // for (const item of input) {
+    //     if (item > largest) {
+    //         secondLarges = largest;
+    //         largest = item;
+    //     } else if (item < largest && item > secondLarges) {
+    //         secondLarges = item
+    //     }
+
+    // }
+    // console.log(largest);
+    // console.log(secondLarges);
+
+    // const input = [2, 7, 11, 4, -2];
+    // const output = [11, 4, -2, 2, 7];
+
+
+    // const temp1 = [...input.slice(2)];
+    // const temp2 = input.slice(0, 2);
+    // const result = [...temp1, ...temp2];
+
+    // console.log(result);
+
+
+    // 
+
+    // function reverseStr(str) {
+    //     const temp = str.split(" ");
+
+    //     const res = temp.map((m) => {
+    //         let t = m.split('');
+    //         return t.reverse().join('');
+    //     })
+
+    //     console.log(res.join(' '));
+
+    // }
+
+    // reverseStr(str);
+
+    const str = "this is javascript code and you to find max char";
+
+    const temp = str.split(' ').map((m) => m.split(''));
+    let res = []
+    for (let i = 0; i < temp.length; i++) {
+        res = [...res, ...temp[i]]
+
+    }
+    console.log(res);
+
+    const t = res.reduce((obj, b) => {
+        if (obj[b] == undefined) {
+            obj[b] = 1;
+            return obj;
+        } else {
+            obj[b]++;
+            return obj;
+        }
+    }, {});
+
+
+    const resArr = Object.entries(t);
+    resArr.sort((a, b) => a[1] - b[1]).reverse();
+    console.log(resArr);
+
+
+
+
+
 
 
 
